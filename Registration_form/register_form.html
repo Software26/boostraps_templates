@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>interfaz</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   
+   
+        <!---------- Estilo css-->
+        <style>
+            *{
+                margin: 0px;
+                padding: 5px;
+                box-sizing: border-box;
+                font-family:'Poppins',san-serif;
+  
+              
+              }
+
+            body 
+            {
+              display: flex;
+              height: 100vh;
+              justify-content: center;
+              align-items: center;
+              padding: 10px;
+              background: linear-gradient(135deg, #cad4db,#efecf0);
+              
+            }
+
+            .container
+            {
+              max-width: 700px;
+              width: 100%;
+              background: #fff;
+              padding: 25px 30px;
+              border-radius: 5px;
+            }
+
+            .container .title
+            {
+              font-size: 25px;
+              font-weight: 500px ;
+              position: relative;
+            }
+            .container .title::before
+            {
+              content: '';
+              position: absolute;
+              left: 0;  
+              bottom: 0;
+              height: 3px;
+              width: 30px;
+              background: linear-gradient(135deg, #cad4db,#efecf0)
+            }
+
+            .container form .user-details
+            {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+            }
+
+            form .user-details .input-box
+            {
+              margin: 20px 0 12px 0;
+              width: calc(100% 2 - 20px);
+            
+            }
+
+            .user-details .input-box .details
+            {
+              display: block;
+              font-weight: 500;
+              margin-bottom: 5px;
+            }
+
+            .user-details .input-box input
+            {
+              
+              width: 100%;
+              height: 45px;
+              outline: none;
+              border-radius: 10px;
+              border: 1px solid #ccc;
+              padding-left: 15px;
+              font-size: 16px;
+              
+
+            }
+            .user-details .input-box input:fucus,
+            .user-details .input-box input:valid{
+
+              border-color:#9b59b6;
+            }
+
+        </style>   
+    </head>
+    <body>
+      <div class="container shadow">
+        <div class="title">Registration</div>
+        <form action="#" class="" id="">
+          <div class="user-details">
+
+            <div class="input-box col-10">
+            <span class="details"> Nombre completo</span>
+            <input type="text" placeholder="Digite su nombre" class="phocus" required>
+            </div>
+
+            <div class="input-box col-6">
+              <span class="details">Nombre de usuario</span>
+              <input type="text" placeholder="Digite usurio" required>
+            </div>
+
+           <div class="input-box col-6">
+              <span class="details">Digite su Email</span>
+              <input type="text" placeholder="Ejemplo@dominio.com" required>
+           </div>
+
+            <div class="input-box col-6">
+              <span class="details">Cedula</span>
+              <input type="text" placeholder="Cedula Sin guiones" required>
+            </div>
+
+            <div class="input-box col-8">
+              <span class="details">Contraseña</span>
+              <input type="text" placeholder="Contraseña" required>
+
+            </div>
+            <div class="input-box col-8">
+              <span class="details">Confirmar contraseña</span>
+              <input type="text" placeholder="Confirme su contraseña" required>
+            </div>
+            <!-----Genero -->
+            <div class="gender-details">
+              <span class="gender-details">Genero</span>
+              
+              <div class="category">
+                <label for="">
+                  <span class="dot-one"></span>
+                  <span class="gender">Masculino</span>
+                </label>
+
+                <label for="">
+                  <span class="dot-one"></span>
+                  <span class="gender">Femenino</span>
+                </label>
+
+                <label for="" class="dot-one">
+                  <span class="dot-one"></span>
+                  <span class="gender">Prefiero no decirlo</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="button">
+              <input type="submit" value="Register">
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+    </body>
+</html>
